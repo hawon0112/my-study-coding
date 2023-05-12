@@ -1,0 +1,54 @@
+body {
+    margin:0;
+    padding: 20px;
+}
+a { 
+    color:rgb(0, 0, 0); text-decoration: none;
+}
+li {
+    color:black;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    border-bottom:5px solid darkcyan;
+    margin:0;
+    padding: 20px;
+}
+.saw {
+    color:gray;
+
+}
+ul{
+    border-right: 3px solid darkcyan;
+    border-left: 10px solid white;
+    width: 100px;
+    margin:0;
+    padding:20px;
+    font-weight: bold;
+}
+h3{
+    color:darkcyan;
+}
+strong{
+    color:darkcyan;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#student{
+    padding-left: 20px;
+}
+#active{
+    color:darkcyan
+}
+@media(max-width:800px){
+    #grid{
+    display: block;
+    }
+    ul{
+    border-right: none;
+    }
+
+}
