@@ -14,6 +14,7 @@ h1 {
     border-bottom:5px solid darkcyan;
     margin:0;
     padding: 20px;
+    color:darkcyan
 }
 .saw {
     color:gray;
@@ -21,7 +22,6 @@ h1 {
 }
 ul{
     border-right: 3px solid darkcyan;
-    border-left: 10px solid white;
     width: 100px;
     margin:0;
     padding:20px;
@@ -41,6 +41,9 @@ strong{
     padding-left: 20px;
 }
 #active{
+    color:darkcyan
+}
+#title{
     color:darkcyan
 }
 @media(max-width:800px){
