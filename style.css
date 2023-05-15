@@ -27,6 +27,11 @@ ul{
     padding:20px;
     font-weight: bold;
 }
+h2{
+    border-bottom:3px solid darkcyan;
+    margin: 0;
+    padding-top: 20px;
+}
 h3{
     color:darkcyan;
 }
@@ -37,13 +42,7 @@ strong{
     display: grid;
     grid-template-columns: 150px 1fr;
 }
-#student{
-    padding-left: 20px;
-}
 #active{
-    color:darkcyan
-}
-#title{
     color:darkcyan
 }
 @media(max-width:800px){
@@ -53,5 +52,7 @@ strong{
     ul{
     border-right: none;
     }
-
+}
+#student2{
+    padding-top: 10px;
 }

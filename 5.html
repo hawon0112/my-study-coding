@@ -17,14 +17,31 @@
         </ul>
         <div id="student">
             <h2> JavaScript Test </h2>
-            <input type="button" value="night" onclick="
-            document.querySelector('body').style.backgroundColor='black';
-            document.querySelector('body').style.color='white';
-            ">
-            <input type="button" value="day" onclick="
-            document.querySelector('body').style.backgroundColor='white';
-            document.querySelector('body').style.color='black';
-            ">
+            <div id="student2">
+                <input type="button" value="night" onclick="
+                document.querySelector('body').style.backgroundColor='black';
+                document.querySelector('body').style.color='white';
+                document.querySelector('#title').style.color='white'
+                ">
+                <input type="button" value="day" onclick="
+                document.querySelector('body').style.backgroundColor='white';
+                document.querySelector('body').style.color='black';
+                document.querySelector('#title').style.color='black'
+                ">
+                <input id="night_day" type="button" value="night" onclick="
+                    if(this.value === 'night'){
+                    document.querySelector('body').style.backgroundColor='black';
+                    document.querySelector('body').style.color='white';
+                    document.querySelector('#title').style.color='white';
+                    this.value = 'day';
+                } else {
+                    document.querySelector('body').style.backgroundColor='white';
+                    document.querySelector('body').style.color='black';
+                    document.querySelector('#title').style.color='black';
+                    this.value = 'night';
+                }
+                ">
+            </div>
         </div>
     </div>
     

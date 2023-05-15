@@ -17,6 +17,21 @@
         </ul>
         <div id="student">
             <h2> 하원의 코딩공부 </h2>
+            <div id="student2">
+                <input type="button" value="night" onclick="
+                    if(this.value === 'night'){
+                    document.querySelector('body').style.backgroundColor='black';
+                    document.querySelector('body').style.color='white';
+                    document.querySelector('#title').style.color='white';
+                    this.value = 'day';
+                    } else {
+                    document.querySelector('body').style.backgroundColor='white';
+                    document.querySelector('body').style.color='black';
+                    document.querySelector('#title').style.color='black';
+                    this.value = 'night';
+                    }
+                ">
+            </div>
             <p>이 웹사이트는 2023년 5월 8일에 시작되어 하원의 코딩공부를 위하여 제작되었다.
                 <br>군 생활 동안 의미있는 활동을 위해 만들기 시작되었다. 
                 <br>html로 시작되어 css와 javascript, python까지 공부하여 나갈 계획이다.

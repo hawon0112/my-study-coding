@@ -17,6 +17,21 @@
         </ul>
         <div id="student">
             <h2> 정리 및 느낌 </h2>
+            <div id="student2">
+                <input type="button" value="night" onclick="
+                    if(this.value === 'night'){
+                    document.querySelector('body').style.backgroundColor='black';
+                    document.querySelector('body').style.color='white';
+                    document.querySelector('#title').style.color='white';
+                    this.value = 'day';
+                    } else {
+                    document.querySelector('body').style.backgroundColor='white';
+                    document.querySelector('body').style.color='black';
+                    document.querySelector('#title').style.color='black';
+                    this.value = 'night';
+                    }
+                ">
+            </div>
             <p>공부한 내용들을 꽤 많이 적었지만 나중에 다른 방식으로 내용을 작성할것으로 추측된다. 
                 <br> 그렇기 때문에 공부 내용 적기는 저정도로 마무리 하도록 하려한다. 
                 <br> 길다면 긴 글을 작성해 본 후 느낀점은 익숙해지기만 한다면 굉장히 큰 힘이 될 수 있는 도구라는 점이다. 

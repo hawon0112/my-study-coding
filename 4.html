@@ -15,9 +15,23 @@
             <li><a href="4.html" class="saw" id="active">CSS Test</a></li>
             <li><a href="5.html" class="saw">JavaScript Test</a></li>
         </ul>
-        <div id="student">
+        <div id="student">            
             <h2> CSS Test </h2>
-
+            <div id="student2">
+                <input type="button" value="night" onclick="
+                    if(this.value === 'night'){
+                    document.querySelector('body').style.backgroundColor='black';
+                    document.querySelector('body').style.color='white';
+                    document.querySelector('#title').style.color='white';
+                    this.value = 'day';
+                    } else {
+                    document.querySelector('body').style.backgroundColor='white';
+                    document.querySelector('body').style.color='black';
+                    document.querySelector('#title').style.color='black';
+                    this.value = 'night';
+                    }
+                ">
+            </div>
         </div>
     </div>
     

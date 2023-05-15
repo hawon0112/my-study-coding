@@ -17,6 +17,21 @@
         </ul>
         <div id="student">
             <h2> 공부 내용 </h2>
+            <div id="student2">
+                <input type="button" value="night" onclick="
+                    if(this.value === 'night'){
+                    document.querySelector('body').style.backgroundColor='black';
+                    document.querySelector('body').style.color='white';
+                    document.querySelector('#title').style.color='white';
+                    this.value = 'day';
+                    } else {
+                    document.querySelector('body').style.backgroundColor='white';
+                    document.querySelector('body').style.color='black';
+                    document.querySelector('#title').style.color='black';
+                    this.value = 'night';
+                    }
+                ">
+            </div>
             <p>지금까지 배운 내용들을 정리하자면 다음과 같다.</p>
             <p><strong>a</strong> : <strong>a</strong>는 링크를 거는 태그이다. 구조는 <strong>a=href="링크"</strong>이다. 
                 <br>링크를 걸고자 하는 부분을 <strong>a</strong>태그로 감싸면 된다. 
