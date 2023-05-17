@@ -18,18 +18,38 @@
         <div id="student">
             <h2> 일기 </h2>
             <div id="student2">
-                <input type="button" value="night" onclick="
+                <input id="night_day" type="button" value="night" onclick="
+                    var target = document.querySelector('body');
+                    var target2 = document.querySelector('#title');
                     if(this.value === 'night'){
-                    document.querySelector('body').style.backgroundColor='black';
-                    document.querySelector('body').style.color='white';
-                    document.querySelector('#title').style.color='white';
+                    target.style.backgroundColor='black';
+                    target.style.color='white';
+                    target2.style.color='white';
                     this.value = 'day';
-                    } else {
-                    document.querySelector('body').style.backgroundColor='white';
-                    document.querySelector('body').style.color='black';
-                    document.querySelector('#title').style.color='black';
-                    this.value = 'night';
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+
+                    while(i < alist.length){
+                        console.log(alist[i]);
+                        alist[i].style.color = 'powderblue';
+                        i=i + 1;
                     }
+                } else {
+                    target.style.backgroundColor='white';
+                    target.style.color='black';
+                    target2.style.color='black';
+                    this.value = 'night';
+
+                    
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < alist.length){
+                        console.log(alist[i]);
+                        alist[i].style.color = 'gray';
+                        i=i + 1;
+                    }
+                    
+                }
                 ">
             </div>
             <p>
@@ -75,6 +95,11 @@
                 <h3>2023년 5월 15일. 전역까지 155일 남았다.</h3> 오늘은 JavaScript에 대해 조금 더 들어가봤다. 
                 <br>조금은 낯설고 어려운 부분도 있지만 문제도 생겼었고 해결하는 능력도 어느정도 갖추게 된것 같아서 뿌듯했다. 
                 <br>JavaScript의 남은 기초도 익히고 능숙하게 사용할 수 있도록 숙달하겠다고 다짐했다. 
+            </p>
+            <p>
+                <h3>2023년 5월 17일. 전역까지 153일 남았다.</h3> 오늘도 JavaScript에 대해 좀 더 배웠다. 
+                <br>조건문과 형태가 비슷한 배열과 반복문에 대해 배웠는데 다음에 조건문 복습할 때 한번에 복습해서 완전히 익혀야겠다고 생각했다. 
+                <br>문장을 배우며 이렇게 하면 되겠다! 라고 생각해서 써본 코드가 마음처럼 작동하지 않아서 아쉬웠다. 실패의 원인을 알아봐야겠다고 생각했다. 
             </p>
         </div>
     </div>

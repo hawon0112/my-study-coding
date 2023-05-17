@@ -18,29 +18,68 @@
         <div id="student">
             <h2> JavaScript Test </h2>
             <div id="student2">
+
                 <input type="button" value="night" onclick="
                 document.querySelector('body').style.backgroundColor='black';
                 document.querySelector('body').style.color='white';
                 document.querySelector('#title').style.color='white'
+                
                 ">
                 <input type="button" value="day" onclick="
                 document.querySelector('body').style.backgroundColor='white';
                 document.querySelector('body').style.color='black';
                 document.querySelector('#title').style.color='black'
                 ">
+
                 <input id="night_day" type="button" value="night" onclick="
+                    var target = document.querySelector('body');
+                    var target2 = document.querySelector('#title');
                     if(this.value === 'night'){
-                    document.querySelector('body').style.backgroundColor='black';
-                    document.querySelector('body').style.color='white';
-                    document.querySelector('#title').style.color='white';
+                    target.style.backgroundColor='black';
+                    target.style.color='white';
+                    target2.style.color='white';
                     this.value = 'day';
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+
+                    while(i < alist.length){
+                        console.log(alist[i]);
+                        alist[i].style.color = 'powderblue';
+                        i=i + 1;
+                    }
                 } else {
-                    document.querySelector('body').style.backgroundColor='white';
-                    document.querySelector('body').style.color='black';
-                    document.querySelector('#title').style.color='black';
+                    target.style.backgroundColor='white';
+                    target.style.color='black';
+                    target2.style.color='black';
                     this.value = 'night';
+
+                    
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < alist.length){
+                        console.log(alist[i]);
+                        alist[i].style.color = 'gray';
+                        i=i + 1;
+                    }
+                    
                 }
                 ">
+
+                <script>
+                    var list = ['일기','공부 내용','정리 및 느낌','CSS Test','JavaScript Test'];
+                </script>
+                <ul>
+                    <script>
+                        var i = 0;
+                        while(i < list.length){
+                            document.write('<li><a href="list[i+1].html">'+list[i]+'</li>');
+                            i = i + 1;
+                        }
+                    </script>
+                </ul>
+
+                
+
             </div>
         </div>
     </div>

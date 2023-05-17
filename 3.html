@@ -18,18 +18,38 @@
         <div id="student">
             <h2> 정리 및 느낌 </h2>
             <div id="student2">
-                <input type="button" value="night" onclick="
+                <input id="night_day" type="button" value="night" onclick="
+                    var target = document.querySelector('body');
+                    var target2 = document.querySelector('#title');
                     if(this.value === 'night'){
-                    document.querySelector('body').style.backgroundColor='black';
-                    document.querySelector('body').style.color='white';
-                    document.querySelector('#title').style.color='white';
+                    target.style.backgroundColor='black';
+                    target.style.color='white';
+                    target2.style.color='white';
                     this.value = 'day';
-                    } else {
-                    document.querySelector('body').style.backgroundColor='white';
-                    document.querySelector('body').style.color='black';
-                    document.querySelector('#title').style.color='black';
-                    this.value = 'night';
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+
+                    while(i < alist.length){
+                        console.log(alist[i]);
+                        alist[i].style.color = 'powderblue';
+                        i=i + 1;
                     }
+                } else {
+                    target.style.backgroundColor='white';
+                    target.style.color='black';
+                    target2.style.color='black';
+                    this.value = 'night';
+
+                    
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < alist.length){
+                        console.log(alist[i]);
+                        alist[i].style.color = 'gray';
+                        i=i + 1;
+                    }
+                    
+                }
                 ">
             </div>
             <p>공부한 내용들을 꽤 많이 적었지만 나중에 다른 방식으로 내용을 작성할것으로 추측된다. 

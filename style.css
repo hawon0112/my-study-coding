@@ -3,10 +3,10 @@ body {
     padding: 20px;
 }
 a { 
-    color:rgb(0, 0, 0); text-decoration: none;
+    color:gray; text-decoration: none;
 }
 li {
-    color:black;
+    color:gray;
 }
 h1 {
     font-size: 50px;
@@ -26,14 +26,6 @@ ul{
     margin:0;
     padding:20px;
     font-weight: bold;
-}
-h2{
-    border-bottom:3px solid darkcyan;
-    margin: 0;
-    padding-top: 20px;
-}
-h3{
-    color:darkcyan;
 }
 strong{
     color:darkcyan;
