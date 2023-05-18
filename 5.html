@@ -4,6 +4,7 @@
  <title> 하원의 코딩공부-JavaScript Test </title>
  <meta charset="utf-8">
  <link rel="stylesheet" href="style.css">
+ <script src="colors.js"></script>
 </head>
 <body>
     <h1><a href="index.html" id="title">하원의 코딩공부</a></h1>
@@ -32,53 +33,30 @@
                 ">
 
                 <input id="night_day" type="button" value="night" onclick="
-                    var target = document.querySelector('body');
-                    var target2 = document.querySelector('#title');
-                    if(this.value === 'night'){
-                    target.style.backgroundColor='black';
-                    target.style.color='white';
-                    target2.style.color='white';
-                    this.value = 'day';
-                    var alist = document.querySelectorAll('a');
-                    var i = 0;
-
-                    while(i < alist.length){
-                        console.log(alist[i]);
-                        alist[i].style.color = 'powderblue';
-                        i=i + 1;
-                    }
-                } else {
-                    target.style.backgroundColor='white';
-                    target.style.color='black';
-                    target2.style.color='black';
-                    this.value = 'night';
-
-                    
-                    var alist = document.querySelectorAll('a');
-                    var i = 0;
-                    while(i < alist.length){
-                        console.log(alist[i]);
-                        alist[i].style.color = 'gray';
-                        i=i + 1;
-                    }
-                    
-                }
+                    nightDayHandler(this);
                 ">
 
                 <script>
                     var list = ['일기','공부 내용','정리 및 느낌','CSS Test','JavaScript Test'];
+                    var count = ['1','2','3','4','5']
                 </script>
                 <ul>
                     <script>
                         var i = 0;
                         while(i < list.length){
-                            document.write('<li><a href="list[i+1].html">'+list[i]+'</li>');
+                            document.write('<li><a href="count[i].html">'+list[i]+'</li>');
                             i = i + 1;
                         }
                     </script>
                 </ul>
 
-                
+                <script>
+                    function f(x,y){
+                        document.write(x*3+y*3+'<br>')
+                    }
+                    f(2,4)
+                </script>
+
 
             </div>
         </div>

@@ -4,6 +4,7 @@
  <title> 하원의 코딩공부-공부 내용 </title>
  <meta charset="utf-8">
  <link rel="stylesheet" href="style.css">
+ <script src="colors.js"></script>
 </head>
 <body>
     <h1><a href="index.html" id="title">하원의 코딩공부</a></h1>
@@ -19,37 +20,7 @@
             <h2> 공부 내용 </h2>
             <div id="student2">
                 <input id="night_day" type="button" value="night" onclick="
-                    var target = document.querySelector('body');
-                    var target2 = document.querySelector('#title');
-                    if(this.value === 'night'){
-                    target.style.backgroundColor='black';
-                    target.style.color='white';
-                    target2.style.color='white';
-                    this.value = 'day';
-                    var alist = document.querySelectorAll('a');
-                    var i = 0;
-
-                    while(i < alist.length){
-                        console.log(alist[i]);
-                        alist[i].style.color = 'powderblue';
-                        i=i + 1;
-                    }
-                } else {
-                    target.style.backgroundColor='white';
-                    target.style.color='black';
-                    target2.style.color='black';
-                    this.value = 'night';
-
-                    
-                    var alist = document.querySelectorAll('a');
-                    var i = 0;
-                    while(i < alist.length){
-                        console.log(alist[i]);
-                        alist[i].style.color = 'gray';
-                        i=i + 1;
-                    }
-                    
-                }
+                    nightDayHandler(this);
                 ">
             </div>
             <p>지금까지 배운 내용들을 정리하자면 다음과 같다.</p>

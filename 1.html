@@ -4,6 +4,7 @@
  <title> 하원의 코딩공부-일기 </title>
  <meta charset="utf-8">
  <link rel="stylesheet" href="style.css">
+ <script src="colors.js"></script>
 </head>
 <body>
     <h1><a href="index.html" id="title">하원의 코딩공부</a></h1>
@@ -19,37 +20,7 @@
             <h2> 일기 </h2>
             <div id="student2">
                 <input id="night_day" type="button" value="night" onclick="
-                    var target = document.querySelector('body');
-                    var target2 = document.querySelector('#title');
-                    if(this.value === 'night'){
-                    target.style.backgroundColor='black';
-                    target.style.color='white';
-                    target2.style.color='white';
-                    this.value = 'day';
-                    var alist = document.querySelectorAll('a');
-                    var i = 0;
-
-                    while(i < alist.length){
-                        console.log(alist[i]);
-                        alist[i].style.color = 'powderblue';
-                        i=i + 1;
-                    }
-                } else {
-                    target.style.backgroundColor='white';
-                    target.style.color='black';
-                    target2.style.color='black';
-                    this.value = 'night';
-
-                    
-                    var alist = document.querySelectorAll('a');
-                    var i = 0;
-                    while(i < alist.length){
-                        console.log(alist[i]);
-                        alist[i].style.color = 'gray';
-                        i=i + 1;
-                    }
-                    
-                }
+                    nightDayHandler(this);
                 ">
             </div>
             <p>
@@ -100,6 +71,13 @@
                 <h3>2023년 5월 17일. 전역까지 153일 남았다.</h3> 오늘도 JavaScript에 대해 좀 더 배웠다. 
                 <br>조건문과 형태가 비슷한 배열과 반복문에 대해 배웠는데 다음에 조건문 복습할 때 한번에 복습해서 완전히 익혀야겠다고 생각했다. 
                 <br>문장을 배우며 이렇게 하면 되겠다! 라고 생각해서 써본 코드가 마음처럼 작동하지 않아서 아쉬웠다. 실패의 원인을 알아봐야겠다고 생각했다. 
+            </p>
+            <p>
+                <h3>2023년 5월 18일. 전역까지 152일 남았다.</h3> 오늘은 JavaScript의 함수와 파일로 쪼개서 저장하는 법에 대해 배웠다. 
+                <br>아직 낯선 코드들 이였지만 그래도 꽤나 익숙해진것같다. 특히나 저번에 css에서 파일로 쪼개서 저장했을 때 느꼈던 효율적인 방식을 JS에서도 적용하니 좋았다. 
+                <br>다만 아쉽게도 어제 생긴 문제를 고민해봤지만 아쉽게도 해결할 수 없었다. 아직 배우지 않은 영역이라고 느껴졌다. 
+                <br>오늘도 외형적으로는 바뀐게 없지만 코드적으로는 바뀐게 많다고 생각하니 뿌듯하다. 어쩌면 CSS보다 JS가 더 재밌다고 느낄지도 모르겠다. 
+                <br>생활코딩의 web2 JS 수업을 내일 마친 후 JS를 더 깊게 배울지 CSS를 더 깊게 배울지는 아직 고민되는 부분이다. 
             </p>
         </div>
     </div>
