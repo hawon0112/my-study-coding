@@ -19,7 +19,7 @@
         <div id="student">
             <h2> JavaScript Test </h2>
             <div id="student2">
-
+                <h2>Event</h2>
                 <input type="button" value="night" onclick="
                 document.querySelector('body').style.backgroundColor='black';
                 document.querySelector('body').style.color='white';
@@ -35,21 +35,13 @@
                 <input id="night_day" type="button" value="night" onclick="
                     nightDayHandler(this);
                 ">
-
                 <script>
                     var list = ['일기','공부 내용','정리 및 느낌','CSS Test','JavaScript Test'];
                     var count = ['1','2','3','4','5']
                 </script>
-                <ul>
-                    <script>
-                        var i = 0;
-                        while(i < list.length){
-                            document.write('<li><a href="count[i].html">'+list[i]+'</li>');
-                            i = i + 1;
-                        }
-                    </script>
-                </ul>
-
+                
+                
+                <h2>Function</h2>
                 <script>
                     function f(x,y){
                         document.write(x*3+y*3+'<br>')
@@ -57,7 +49,36 @@
                     f(2,4)
                 </script>
 
-
+                <h2>Object</h2>
+                <h3>Create</h3>
+                <script>
+                    var pkc = {
+                        "teacher" : "hawon",
+                        "student" : "nowjin"
+                    };
+                    document.write("teacher : "+pkc.teacher+"<br>");
+                    document.write("student : "+pkc.student+"<br>");
+                    pkc.student2 = "geonj";
+                    document.write("student2 : "+pkc.student2+"<br>");
+                    pkc["highschool missionary"] = "OneParadice";
+                    document.write("highschool missionary : "+pkc["highschool missionary"]+"<br>");
+                </script>
+                <h3>Iterate</h3>
+                <script>
+                    for(var key in pkc) {
+                        document.write(key+' : '+pkc[key]+'<br>');
+                    }
+                </script>
+                <h2>Property & Method</h2>
+                <script>
+                    pkc.showAll = function(){
+                        for(var key in this) {
+                        document.write(key+' : '+this[key]+'<br>');
+                        
+                    }
+                    }
+                    pkc.showAll();
+                </script>
             </div>
         </div>
     </div>
