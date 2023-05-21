@@ -11,7 +11,6 @@ var Body = {
     setColor:function (color){
         document.querySelector('body').style.color=color;
     },
-    
     setBackgroundColor:function (color){
         document.querySelector('body').style.backgroundColor=color;
     },
@@ -21,20 +20,18 @@ var Body = {
 }
 function nightDayHandler(self){
     var target = document.querySelector('body');
-                var target2 = document.querySelector('#title');
+    var target2 = document.querySelector('#title');
                 if(self.value === 'night'){
-                Body.SetBackgroundColor('black');
-                Body.SetColor('white');
+                Body.setBackgroundColor('black');
+                Body.setColor('white');
                 Body.setColor2('white');
                 self.value = 'day';
                 setColor('powderblue')
             } else {
-                Body.SetBackgroundColor('white');
-                Body.SetColor('black');
+                Body.setBackgroundColor('white');
+                Body.setColor('black');
                 Body.setColor2('black');
                 self.value = 'night';
-
-                
                 setColor('blue')
             }
 }
