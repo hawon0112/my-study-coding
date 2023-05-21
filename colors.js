@@ -14,7 +14,10 @@ var Body = {
     
     setBackgroundColor:function (color){
         document.querySelector('body').style.backgroundColor=color;
-    }
+    },
+    setColor2 :function (color){
+        document.querySelector('#title').style.color=color;
+    } 
 }
 function nightDayHandler(self){
     var target = document.querySelector('body');
@@ -22,13 +25,13 @@ function nightDayHandler(self){
                 if(self.value === 'night'){
                 Body.SetBackgroundColor('black');
                 Body.SetColor('white');
-                target2.style.color='white';
+                Body.setColor2('white');
                 self.value = 'day';
                 setColor('powderblue')
             } else {
                 Body.SetBackgroundColor('white');
                 Body.SetColor('black');
-                target2.style.color='black';
+                Body.setColor2('black');
                 self.value = 'night';
 
                 
